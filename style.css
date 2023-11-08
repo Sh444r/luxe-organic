@@ -3,6 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0em;
     max-width: 100%;
+    font-size: 15px;
 }
 
 * {
@@ -19,10 +20,11 @@ body {
     max-width: 10%;
     object-fit: cover;
     float: right;
-    margin-right: 20pxpx;
+    margin-right: 20px;
     margin-top: 20px;
     overflow: hidden;
 }
+
 
 nav {
     background: #D9D0C7;
@@ -33,7 +35,7 @@ nav {
 
 nav ul {
     float: left;
-    /* margin-left: 20px; dit erbij of niet? */
+    /* margin-left: 20px;  */
 }
 
 nav ul li {
@@ -104,6 +106,12 @@ a:hover, a:active {
     }
 }
 
+a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
 /* waar main begint */
 
 p {
@@ -115,36 +123,195 @@ p {
     background-color: #F2F2F2;
     background-image: url(img/groeneboom.jpg);
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    font-size: 35px;
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-}
+    justify-content: center;
+    text-align: center;
+} 
 
 .container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    max-width: 960px;
+    flex-direction: column;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 10px 20px 10px 20px;
+    max-width: 100%;
+}
+
+.container-kleur {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* max-width: 960px; */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    background-color: #E6DFDC;
+    padding: 10px 10px 10px 10px;
+}
+
+.container-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    background-color: #E6DFDC;
+    /* padding: 10px 10px 10px 10px; */
+}
+
+.container-row2 img {
+    max-width: 50%;
+    max-height: 50%;
+   padding-left: 100px;
+   float: left;
+}
+
+
+.oilab-tekst {
+    max-width: 40%;
+    height: 40%;
+    padding: 10px 10px 10px 10px;
 }
 
 .location {
     width: 100%;
-    height: 400px;
-}
-
-.selectie-producten {
-    background-color: #F2E2DC;
-    padding: 200px 200px 20px 20px;
+    height: 300px;
+    margin-top: 1em;
 }
 
 .container-logo img {
-    max-width: 10%
+    max-width: 10%;
+}
+
+.container-jaarlijks {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-duurzaamheid {
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    color: white;
+}
+
+.bgnails1 {
+    background-image: url(img/nails1.jpg);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.oilab-product {
+    max-width: 50%;
+}
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    width: 700px;
+    padding-left: 10px;
+    padding-right: 30px;
+    font-size: 15px;
+}
+
+.message-icon {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin-bottom: 10px;
+    margin-top: 1em;
+}
+
+.message-icon span {
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+form input, textarea {
+    width: 100%;
+    border: 1px solid #D9D0C7;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: #D9D0C7 80%;
+}
+
+#input-field {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: none;
+}   
+
+#input-field i {
+    font-size: 27px;
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.send-btn {
+    padding: 10px;
+    margin-left: 1em;
+    border: 1px solid #D9D0C7;
+    background-color: white ;
+}
+
+footer {
+    font-size: 12px;
+    background-color: #D9D0C7;
+}
+
+/* .bgbladeren {
+    background-image: url(img/gbladeren.png);
+    padding-top: 200px;
+    padding-bottom: 150px;
+    padding-right: 200px;
+    background-size: cover;
+} */
+
+.bgbladeren img {
+    max-width: 100%;
+}
+
+.oilabprd {
+    background-image: url(img/oilabimg.png);
+    background-color: #808080;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
