@@ -17,14 +17,15 @@ body {
 
 .logo {
     height: auto;
-    max-width: 10%;
-    object-fit: cover;
+    max-width: 20%;
     float: right;
-    margin-right: 20px;
-    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-right: 10px;
     overflow: hidden;
 }
 
+/* waar header begint */
 
 nav {
     background: #D9D0C7;
@@ -32,10 +33,8 @@ nav {
     max-width: 100%;
 }
 
-
 nav ul {
     float: left;
-    /* margin-left: 20px;  */
 }
 
 nav ul li {
@@ -48,7 +47,6 @@ nav ul li {
 nav ul li a {
     color: black;
     font-size: 17px;
-    border-radius: 3px;
 }
 
 a:hover, a:active {
@@ -92,10 +90,11 @@ a:hover, a:active {
     nav ul li {
         display: block;
         margin: 50px 0;
-        line-height: 30px;
+        line-height: 20px;
     }
     nav ul li a {
-        font-size: 20px;
+        font-size: 18px;
+        border-bottom: 1px solid black;
     }
     a:hover, a:active{
         background: none;
@@ -112,11 +111,40 @@ a {
     color: white;
 }
 
+/* waar header eindigt */
+
 /* waar main begint */
+
+h1 {
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    color: white;
+    font-size: 25px;
+}
 
 p {
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 10px 20px 10px 20px;
+    max-width: 100%;
 }
 
 .bgboom {
@@ -133,15 +161,14 @@ p {
     text-align: center;
 } 
 
-.container {
-    display: flex;
+.container-jaarlijks {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     justify-content: center;
-    flex-direction: column;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    padding: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.bgbladeren img {
     max-width: 100%;
 }
 
@@ -149,18 +176,15 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* max-width: 960px; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
     margin-bottom: 2em;
-    /* padding-left: 1rem;
-    padding-right: 1rem; */
     background-color: #E6DFDC;
     padding: 10px 10px 10px 10px;
 }
 
-.container-row2 {
+/* .container-row2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -169,22 +193,7 @@ p {
     margin-top: 1em;
     margin-bottom: 2em;
     background-color: #E6DFDC;
-    /* padding: 10px 10px 10px 10px; */
-}
-
-.container-row2 img {
-    max-width: 50%;
-    max-height: 50%;
-   padding-left: 100px;
-   float: left;
-}
-
-
-.oilab-tekst {
-    max-width: 40%;
-    height: 40%;
-    padding: 10px 10px 10px 10px;
-}
+} */
 
 .location {
     width: 100%;
@@ -196,30 +205,11 @@ p {
     max-width: 7%;
 }
 
-.container-jaarlijks {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    justify-content: center;
-    text-align: center;
-}
-
 .container-duurzaamheid {
     justify-content: center;
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 200;
-}
-
-h2 {
-    margin-bottom: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 200;
-    color: white;
-}
 
 .bgnails1 {
     background-image: url(img/nails1.jpg);
@@ -229,13 +219,14 @@ h2 {
     background-size: cover;
 }
 
-.oilab-product {
+/* .oilab-product {
     max-width: 50%;
-}
+} */
 
+/* contactformulier begin */
 .hero {
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -243,13 +234,13 @@ h2 {
 
 form {
     width: 700px;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 30px;
     font-size: 15px;
 }
 
 .message-icon {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
     margin-bottom: 10px;
@@ -267,17 +258,18 @@ form input, textarea {
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
-    background-color: #D9D0C7 80%;
+    background-color: #F2F2F2;
+    margin-bottom: 1em;
+
 }
 
-#input-field {
+#inputfield #inputfield2 #inputfield3 {
     padding-bottom: 20px;
     display: flex;
     align-items: center;
-    color: none;
 }   
 
-#input-field i {
+#inputfield #inputfield2 #inputfield3 i {
     font-size: 27px;
     margin-right: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -285,29 +277,29 @@ form input, textarea {
 
 .send-btn {
     padding: 10px;
-    margin-left: 1em;
     border: 1px solid #D9D0C7;
     background-color: white ;
 }
+/* einde van contactformulier */
 
-footer {
-    font-size: 12px;
-    background-color: #D9D0C7;
-    padding-left: 2em;
+/* begin van div class collage */
+.collage img {
+    margin: auto;
+    max-width: 50%;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
-
-.bgbladeren img {
-    max-width: 100%;
-}
-
 
 figure {
-    display: flex;
+    /* display: flex;  */
     justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     background-color: #E6DFDC;
     padding-top: 20px;
     margin-bottom: 2em;
+    max-width: 100%;
+    padding-bottom: 10px;
 }
 
 figure h1 {
@@ -322,31 +314,27 @@ figcaption {
     margin-left: 3em;
     margin-right: 3em;
     margin-bottom: 2em;
+    text-align: center;
 }
 
-.collage img {
-    margin: auto;
-    max-width: 50%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
-
-.bgimg {
-    background-image: url(img/oilabproducten.jpeg);
-    background-size: cover;
-}
+/* einde van div class collage */
 
 .bgmuur {
     background-image: url(img/groeneplant-achtergrond.jpg);
     background-size: cover;
     padding-top: 5px;
-    padding-bottom: 150x;
 }
 
 .bgmuur p {
+    display: flex;
     padding-top: 170px;
     padding-left: 130px;
     font-family: 'Times New Roman', Times, serif;
     color: white;
+}
+
+footer {
+    font-size: 12px;
+    background-color: #D9D0C7;
+    padding-left: 2em;
 }
