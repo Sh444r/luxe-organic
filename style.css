@@ -3,7 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0em;
     max-width: 100%;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 * {
@@ -193,7 +193,7 @@ p {
 }
 
 .container-logo img {
-    max-width: 10%;
+    max-width: 7%;
 }
 
 .container-jaarlijks {
@@ -293,25 +293,60 @@ form input, textarea {
 footer {
     font-size: 12px;
     background-color: #D9D0C7;
+    padding-left: 2em;
 }
-
-/* .bgbladeren {
-    background-image: url(img/gbladeren.png);
-    padding-top: 200px;
-    padding-bottom: 150px;
-    padding-right: 200px;
-    background-size: cover;
-} */
 
 .bgbladeren img {
     max-width: 100%;
 }
 
-.oilabprd {
-    background-image: url(img/oilabimg.png);
-    background-color: #808080;
-    padding-top: 300px;
-    padding-bottom: 300px;
-    background-repeat: no-repeat;
+
+figure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E6DFDC;
+    padding-top: 20px;
+    margin-bottom: 2em;
+}
+
+figure h1 {
+    margin-top: 1em;
+    text-align: center;
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 2em;
+}
+
+.collage img {
+    margin: auto;
+    max-width: 50%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgimg {
+    background-image: url(img/oilabproducten.jpeg);
     background-size: cover;
+}
+
+.bgmuur {
+    background-image: url(img/groeneplant-achtergrond.jpg);
+    background-size: cover;
+    padding-top: 5px;
+    padding-bottom: 150x;
+}
+
+.bgmuur p {
+    padding-top: 170px;
+    padding-left: 130px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
